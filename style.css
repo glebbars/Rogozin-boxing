@@ -88,6 +88,10 @@ p{
     border-bottom: 1px solid orange;
 }
 
+.intro_subtitile{
+    color: var(--black);
+}
+
 .animation{
     color: var(--black);
     font-weight: 200;
