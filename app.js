@@ -58,7 +58,6 @@ const hideScrollElement = (element) => {
 
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-      console.log(el)
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
@@ -94,6 +93,7 @@ const myblock = document.querySelector('.fitboxing')
  
 myLunk.addEventListener('click', (e) =>{ 
     const coords = myblock.getBoundingClientRect()
+    console.log(coords)
     window.scrollTo({ 
         top: coords.top, 
         left: coords.left, 
@@ -103,7 +103,6 @@ myLunk.addEventListener('click', (e) =>{
 
 const myConts = document.querySelector('#escape') 
 const blocks = document.querySelector('.boxing')
- 
  
 myConts.addEventListener('click', (e) =>{ 
     const coords = myblock.getBoundingClientRect()
